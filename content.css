@@ -1,12 +1,29 @@
 header {
     background-color: black;
     color: white;
+    top: 0;
     display: flex;
-    padding-left: 1em;
+}
+
+header li {
+    display: inline-block;
+}
+
+header a {
+    display: block;
+    color: white;
+    padding: 30px 20px;
+}
+
+.banner {
+    padding: 320px 0;
+    text-align: center;
+    background-color: wheat;
 }
 
 footer {
     background-color: black;
     padding-left: 1em;
+    display: flex;
     color: white;
 }
