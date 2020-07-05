@@ -8,35 +8,68 @@
     <body>
         <header>
             <h1 class="logo"><a href="index.html">Eric Wu</a></h1>
-            <nav>
+            <nav id="nav-bar">
                 <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="bio.html">Bio</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="row">
-            <div class="banner">
-                
+        <section id="about-section">
+            <div class="row">
+                <div class="banner">
+                    <img id="profile-image" src="assets\images\drcronut.jpg" alt="Eric Wu in Seattle">
+                    <p>Hi, I am Eric Wu, a third year Computer Science and Engineering major at UC Irvine.</p>
+                </div>
+                <label id="skills">I am proficient in the following...</label>
+                <ul>
+                   <li>Python</li>
+                   <li>Java</li>
+                   <li>C/C++</li>
+                   <li>Javascript</li>
+                   <li>HTML/CSS</li> 
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="container">
+        </section>
+        <section id="project-section">
+            <h2>Here are some of my projects...</h2>
+            <div class="project-container">
+                <a id="soul-woof-project" href="https://devpost.com/software/soul-woof">
+                    <img id="soul-woof-project-img" src="assets\images\soulwoof.jpg">
+                    <p>Soul Woof</p>
+                </a>
+                <p>
+                    This is a prototype for a dog dating website I made with some friends that won MLH 
+                    Best Beginner Hack At Citrus Hacks 2019
+                </p>
             </div>
-        </div>
-        <footer>
-            <p class="footer-left">Eric Wu 2020</p>
-            <ul class="footer-right">
-                <li></li>
-                <img src="assets\icons\linkedin\LI-In-Bug.png" class="linkedin-bug">
-                <li></li>
-                <img src="assets\icons\github\GitHub-Mark-Light-32px.png">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </footer>
+            <div class="project-container">
+                <a id="car-match-project" href="https://devpost.com/software/japanese-car-match">
+                    <img id="car-match-project-img" src="assets\images\jcarmatch.jpg">
+                    <p>Japanese Car Match</p>
+                </a>
+                <p>
+                    This is a facebook messenger bot I made for Facebook Global Developer Hackathon 2020.
+                    Type 'start over' and follow the instructions to find your desired Japanese Car!
+                    Application currently pending App Review. 
+                </p>
+            </div>
+        </section>
+        <section id="contact-section">
+            <p>For more information please check out my <a href="assets\files\resume.pdf">resume.</a></p>
+            <footer>
+                <p class="footer-left">Eric Wu 2020</p>
+                <ul class="footer-right">
+                    <li></li>
+                    <img src="assets\icons\linkedin\LI-In-Bug.png" class="linkedin-bug">
+                    <li></li>
+                    <img src="assets\icons\github\GitHub-Mark-Light-32px.png">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </footer>
+        </section>
     </body>
 </html>
