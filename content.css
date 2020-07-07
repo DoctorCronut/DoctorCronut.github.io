@@ -126,8 +126,6 @@ nav ul li a:hover {
     margin-bottom: 6rem;
 }
 
-.tools-tile {}
-
 #git-png {
     display: block;
     width: 100%;
@@ -152,8 +150,8 @@ nav ul li a:hover {
 }
 
 #project-section {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     background-color: #F8E4CC;
     /* justify-content: center; */
     text-align: center;
@@ -163,8 +161,8 @@ nav ul li a:hover {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 45vh);
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-template-rows: repeat(autofit, 45vh);
     grid-gap: 15px;
 }
 
@@ -175,7 +173,7 @@ nav ul li a:hover {
 
 .project-img {
     border-radius: 1%;
-    border: 20px solid #222222;
+    border: 20px solid #2F343A;
 }
 
 .project-img-tile {
