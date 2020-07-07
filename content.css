@@ -1,16 +1,21 @@
 body {
     font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 header {
-    background-color: black;
+    /* background-color: #003366; */
+    background-color: #2F343A;
     display: flex;
-
+    z-index: 10;
     justify-content: space-between;
 }
 
 header a {
     color: white;
+    /* color: goldenrod; */
     text-decoration: none;
 }
 
@@ -22,6 +27,7 @@ header .logo a {
 
 nav ul {
     display: flex;
+    list-style-type: none;
     padding: 10px;
 }
 
@@ -34,10 +40,189 @@ nav ul li a:hover {
     border-bottom: 1px solid white;
 }
 
-footer {
-    background-color: black;
+#about-section {
     display: flex;
-    /* justify-content: space-between; */
+    flex-direction: column;
+    /* background-color: white; */
+    background-color: #B4D8E7;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    background: #003366;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+}
+
+#profile-image {
+    width: 50vh;
+    margin: 0 50px 0 0;
+    /* border: 50px solid #B4D8E7; */
+    /* border: 50px solid #003366; */
+    border: 50px transparent;
+    object-fit: contain;
+    align-self: flex-start;
+    border-radius: 50%;
+}
+
+.bio {
+    /* flex: 1 1 auto; */
+    /* background: #003366; */
+    background-repeat: no-repeat;
+    margin-left: -100px;
+}
+
+#bio-intro {
+    font-weight: bold;
+    font-size: 7vh;
+    padding-top: 50px;
+    /* margin-left: 40px; */
+    color: goldenrod;
+}
+
+#bio-college {
+    font-weight: bold;
+    font-size: 2vh;
+    line-height: 30px;
+    /* margin-left: 40px; */
+    margin-right: 20px;
+    color: goldenrod;
+}
+
+#skills {
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.tools-desc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tools-intro {
+    font-weight: bold;
+    font-size: 2vh;
+    align-self: center;
+}
+
+.tools-grid {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.tools-tile {}
+
+#git-png {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#node-png {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+#as-png {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon-name {
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+#project-section {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: whitesmoke;
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 45vh);
+    grid-gap: 15px;
+}
+
+#project-intro {
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+/* .project-img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+} */
+
+.project-img-tile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-text-tile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-desc {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.project-title {
+    color: black;
+    font-weight: bold;
+    font-size: 4vh;
+    /* margin-left: -10em; */
+}
+
+
+#contact-section {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2F343A;
+    width: 100%;
+}
+
+#contact-section a {
+    color: white;
+}
+
+footer {
+    background-color: #2F343A;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+footer p {
+    background-color: #2F343A;
 }
 
 .sm-icon {
