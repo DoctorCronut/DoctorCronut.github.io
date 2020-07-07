@@ -13,6 +13,11 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    color: white;
+    margin-left: 10px;
+}
+
 header a {
     color: white;
     /* color: goldenrod; */
@@ -149,10 +154,11 @@ nav ul li a:hover {
 #project-section {
     /* display: flex;
     flex-direction: column; */
-    background-color: whitesmoke;
+    background-color: #F8E4CC;
     /* justify-content: center; */
     text-align: center;
     width: 100%;
+    padding-bottom: 80px;
 }
 
 .project-grid {
@@ -167,11 +173,10 @@ nav ul li a:hover {
     font-size: 4vh;
 }
 
-/* .project-img {
-    object-fit: contain;
-    height: auto;
-    width: 100%;
-} */
+.project-img {
+    border-radius: 1%;
+    border: 20px solid #222222;
+}
 
 .project-img-tile {
     width: 100%;
