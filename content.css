@@ -48,7 +48,6 @@ nav ul li a:hover {
 #about-section {
     display: flex;
     flex-direction: column;
-    /* background-color: white; */
     background-color: #B4D8E7;
     justify-content: center;
     text-align: center;
@@ -56,36 +55,25 @@ nav ul li a:hover {
 }
 
 .banner {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     background: #003366;
     background-repeat: no-repeat;
-    justify-content: space-evenly;
     padding: 30px 0 30px 0;
 }
 
 #profile-image {
     width: 50vh;
-    margin: 0 50px 0 0;
-    /* border: 50px solid #B4D8E7; */
-    /* border: 50px solid #003366; */
     border: 50px transparent;
     object-fit: contain;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     border-radius: 50%;
-}
-
-.bio {
-    /* flex: 1 1 auto; */
-    /* background: #003366; */
-    background-repeat: no-repeat;
-    margin-left: -100px;
 }
 
 #bio-intro {
     font-weight: bold;
     font-size: 7vh;
     padding-top: 50px;
-    /* margin-left: 40px; */
     color: goldenrod;
 }
 
@@ -93,7 +81,6 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 2vh;
     line-height: 30px;
-    /* margin-left: 40px; */
     margin-right: 20px;
     color: goldenrod;
 }
@@ -120,8 +107,8 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     width: 100%;
-    grid-gap: 4rem;
     max-width: 1280px;
+    gap: 4rem;
     margin: 0 auto;
     margin-bottom: 6rem;
 }
@@ -153,7 +140,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     background-color: #F8E4CC;
-    /* justify-content: center; */
+    justify-content: center;
     text-align: center;
     width: 100%;
     padding-bottom: 80px;
@@ -161,9 +148,9 @@ nav ul li a:hover {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(autofit, 1fr);
-    grid-template-rows: repeat(autofit, 45vh);
-    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 45vh);
+    background-repeat: no-repeat;
 }
 
 #project-intro {
@@ -176,9 +163,19 @@ nav ul li a:hover {
     border: 20px solid #2F343A;
 }
 
+@media only screen and (max-width: 600px) {
+    .project-img {
+        border-radius: 1%;
+        height: 50%;
+        margin: 50px;
+        width: 50%;
+        border: 5px solid #2F343A;
+    }
+}
+
 .project-img-tile {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     object-fit: cover;
 }
 
@@ -199,7 +196,6 @@ nav ul li a:hover {
     font-size: 4vh;
     /* margin-left: -10em; */
 }
-
 
 #contact-section {
     display: flex;
