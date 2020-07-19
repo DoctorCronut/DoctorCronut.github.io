@@ -164,7 +164,7 @@ nav ul li a:hover {
     border: 1em solid #2F343A;
 }
 
-/* @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     .project-img {
         border-radius: 1%;
         height: 40%;
@@ -183,7 +183,7 @@ nav ul li a:hover {
         border: 5px solid #2F343A;
     }
 }
-
+/*
 @media only screen and (min-width: 768px) {
     .project-img {
         border-radius: 1%;
